@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IntuneSDKDebug.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Margin="0,30"
+            Padding="30,0"
+            Spacing="25">
+
+            <Label Text="This demonstration app shows a problem with Intune SDK 19.1.0 / 19.2.0 when used in .net8 Maui, that only occurs in a 'RELEASE' binary provided via TestFlight. When calling one of the SDK methods that should bring up the SDK UI, nothing happens. No Error and no Exception"/>
+
+
+            <Button                
+                Text="Open Intune Diagnostic Console (UI)"                 
+                Clicked="OpenIntuneDiagnosticClicked"
+                HorizontalOptions="Fill" />
+
+            <Button                
+                Text="Get Intune Diagnostic Information"                 
+                Clicked="ShowIntuneDiagnosticLogs"
+                HorizontalOptions="Fill" />            
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
+
